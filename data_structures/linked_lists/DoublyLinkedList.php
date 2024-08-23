@@ -154,8 +154,8 @@ $myLinkedList->insert(20, 88); //1, 10, 99, 5, 16, 88
 
 $myLinkedList->remove(2);
 echo json_encode($myLinkedList->printList()) . "\n"; // [1, 10, 5, 16, 88]
-echo "Double linked list size: " . $myLinkedList->size() . "\n"; //5
+echo "Doubly linked list size: " . $myLinkedList->size() . "\n"; //5
 
 $myLinkedList->remove(0);
 echo json_encode($myLinkedList->printList()) . "\n"; // [10, 5, 16, 88]
-echo "Double linked list size: " . $myLinkedList->size() . "\n"; // 4
+echo "Doubly linked list size: " . $myLinkedList->size() . "\n"; // 4
