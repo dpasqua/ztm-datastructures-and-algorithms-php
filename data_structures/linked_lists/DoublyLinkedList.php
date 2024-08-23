@@ -152,10 +152,10 @@ $myLinkedList->prepend(1); //1, 10, 5, 16
 $myLinkedList->insert(2, 99); //1, 10, 99, 5, 16
 $myLinkedList->insert(20, 88); //1, 10, 99, 5, 16, 88
 
-$myLinkedList->remove(2); //1, 10, 5, 16, 88
-var_dump(implode(',' ,$myLinkedList->printList()));
-var_dump($myLinkedList->size()); // 5
+$myLinkedList->remove(2);
+echo json_encode($myLinkedList->printList()) . "\n"; // [1, 10, 5, 16, 88]
+echo "Double linked list size: " . $myLinkedList->size() . "\n"; //5
 
-$myLinkedList->remove(0); //10, 5, 16, 88
-var_dump(implode(",", $myLinkedList->printList()));
-var_dump($myLinkedList->size()); // 4
+$myLinkedList->remove(0);
+echo json_encode($myLinkedList->printList()) . "\n"; // [10, 5, 16, 88]
+echo "Double linked list size: " . $myLinkedList->size() . "\n"; // 4

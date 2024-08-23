@@ -134,3 +134,22 @@ class LinkedList
         return null;
     }
 }
+
+if(isset($including)) {
+    return;
+}
+
+$myLinkedList = new LinkedList(10);
+$myLinkedList->append(5); // 10, 5
+$myLinkedList->append(16); //10, 5, 16
+$myLinkedList->prepend(1); //1, 10, 5, 16
+$myLinkedList->insert(2, 99); //1, 10, 99, 5, 16
+$myLinkedList->insert(20, 88); //1, 10, 99, 5, 16, 88
+
+$myLinkedList->remove(2);
+echo json_encode($myLinkedList->printList()) . "\n"; // [1, 10, 5, 16, 88]
+echo "LinkedList size: " . $myLinkedList->size() . "\n"; // 5
+
+$myLinkedList->remove(0);
+echo json_encode($myLinkedList->printList()) . "\n"; // [10, 5, 16, 88]
+echo "LinkedList size: " . $myLinkedList->size() . "\n"; // 4
