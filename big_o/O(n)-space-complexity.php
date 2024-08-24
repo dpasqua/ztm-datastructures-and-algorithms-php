@@ -8,4 +8,5 @@ function arrayOfHiNTimes(int $n) {
   return $hiArray;
 }
 
-var_dump(arrayOfHiNTimes(6)); // O(n)
+// ["hi","hi","hi","hi","hi","hi"]
+echo json_encode(arrayOfHiNTimes(6)) . "\n"; // O(n)

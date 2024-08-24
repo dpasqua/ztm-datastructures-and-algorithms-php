@@ -11,6 +11,6 @@ function findNemo(array $array) {
     }
 }
 
-// O(n) --> Liner Time
+// O(n) --> Linear Time
 findNemo($nemo);
-findNemo(($everyone));
+findNemo($everyone);

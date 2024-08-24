@@ -8,5 +8,5 @@ function logFirstTwoBoxes(array $boxes) {
 }
 
 //O(1) - Constant Time
-logFirstTwoBoxes($boxes); // O(2)
+logFirstTwoBoxes($boxes);
 
