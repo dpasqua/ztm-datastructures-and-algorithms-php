@@ -11,5 +11,5 @@ function reverse(string $str): string {
     return implode('', $reversedArray);
 }
 
-echo reverse('Hello World') . "\n";
-echo reverse('Hi My name is Douglas') . "\n";
+echo reverse('Hello World') . "\n"; //dlroW olleH
+echo reverse('Hi My name is Douglas') . "\n"; //salguoD si eman yM iH

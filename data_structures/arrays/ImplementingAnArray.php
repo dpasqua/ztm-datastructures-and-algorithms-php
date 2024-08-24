@@ -48,6 +48,6 @@ $myArray->push(30);
 $myArray->pop();
 $myArray->delete(1);
 
-var_dump($myArray->get(1));
+var_dump($myArray->get(1)); // !
 var_dump($myArray);
 

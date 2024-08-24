@@ -29,4 +29,6 @@ function merge_sorted_arrays(array $arr1, array $arr2): array {
 }
 
 $arr = merge_sorted_arrays([0,3,4,31], [3,4,6,30]);
-var_dump($arr);
+echo json_encode($arr) . "\n";
+
+//[0,3,3,4,4,6,30,31]
