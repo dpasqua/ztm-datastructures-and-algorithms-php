@@ -47,7 +47,6 @@ $myHashTable->set('grapes', 10000);
 $myHashTable->set('bananas', 10);
 $myHashTable->set('apples', 9);
 
-var_dump(["grapes" => $myHashTable->get('grapes')]);
-var_dump([ "apples" => $myHashTable->get('apples')]);
-var_dump(["bananas" => $myHashTable->get('bananas')]);
-
+echo json_encode(["grapes" => $myHashTable->get('grapes')]) . "\n"; //{"grapes":10000}
+echo json_encode(["apples" => $myHashTable->get('apples')]) . "\n"; //{"apples":9}
+echo json_encode(["bananas" => $myHashTable->get('bananas')]) . "\n"; //{"bananas":10}
