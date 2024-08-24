@@ -147,10 +147,6 @@ $tree->insert(20);
 $tree->insert(170);
 $tree->insert(15);
 $tree->insert(1);
-$tree->remove(170);
-
-var_dump($tree->lookup(20));
-var_dump(traverse($tree->root));
 
 function traverse(Node $node) {
     $tree = new \stdClass();
@@ -160,6 +156,8 @@ function traverse(Node $node) {
     return $tree;
 }
 
+echo json_encode($tree->lookup(20)) . "\n";
+echo json_encode(traverse($tree->root)) . "\n";
 
 //     9
 //  4     20
